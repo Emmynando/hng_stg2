@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat+Alternates:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pri-clr: #11453b;
+  --pri-text: "Montserrat Alternates", sans-serif;
+  --sec-text: "Inter", sans-serif;
+}
+
+html,
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button:focus {
+  border-color: blue;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* blog array */
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blog-item {
+  background-color: rgb(248, 244, 244);
+  border-radius: 5px 10px 10px 10px;
+  box-shadow: 3px 5px 2px #ccc;
+  padding: 0.5rem;
+  width: 20rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+footer li {
+  list-style-type: none;
+}

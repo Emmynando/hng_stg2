@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-size: 100% 100%;
+  /* justify-content: center; */
+}
+
+.box {
+  margin-left: 3rem;
+  width: 404px;
+  height: 285px;
+  width: 30%;
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.overview {
+  color: white;
+}
+
+.rating {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.rating img {
+  display: inline-flex;
+  margin-right: 0.4rem;
+  margin-bottom: -0.1rem;
+}
+
+.trailer {
+  background-color: #be123c;
+  border: none;
+  width: 169px;
+  height: 36px;
+  padding: 6px 16px;
+  border-radius: 6px;
+}
