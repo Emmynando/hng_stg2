@@ -1,6 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  gap: 3px;
 }
 
 .left-container {
@@ -67,6 +68,10 @@ h6 {
   width: 112px;
   height: 30px;
 }
+.rated-button {
+  background-color: #be123c;
+  color: #fff;
+}
 
 .right-container {
   padding: 1rem;
@@ -100,6 +105,12 @@ h6 {
   font-size: 1.2rem;
   font-weight: 700;
   text-align: right;
+}
+
+.rating img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 
 .rating .revenue {
@@ -137,4 +148,11 @@ h6 {
   background-color: #be123c1a;
   border-radius: 10px;
   width: 22rem;
+}
+
+select {
+  width: 16rem;
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #c7c7c7;
 }

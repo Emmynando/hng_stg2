@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import tv from "/images/tv.png";
+import star from "/images/Star.svg";
 import { MovieDeet } from "../component/models/movieDetail";
 import { sliceRevenue } from "../component/js/utils.ts";
 import styles from "../component/Layout/MovieDetail.module.css";
@@ -43,14 +44,16 @@ export default function MovieDetails() {
     <div className={styles.container}>
       <div className={styles["left-container"]}>
         <nav>
-          <header>
-            <div>
-              <img src={tv} alt="chukwuemeka" />
-            </div>
-            <div>
-              <h1> MovieBox</h1>
-            </div>
-          </header>
+          <Link to="/">
+            <header>
+              <div>
+                <img src={tv} alt="chukwuemeka" />
+              </div>
+              <div>
+                <h1> MovieBox</h1>
+              </div>
+            </header>
+          </Link>
           <ul>
             <li>Home</li>
             <li>Movies</li>
@@ -90,6 +93,7 @@ export default function MovieDetails() {
             </div>
             <div>
               <p className={styles.rating}>
+                <img src={star} alt="start" />
                 {movDetail.vote_average.toFixed(1)}
                 <span className={styles.revenue}>
                   | {sliceRevenue(movDetail.revenue)}
@@ -100,7 +104,12 @@ export default function MovieDetails() {
           <div className={styles["bottom-section"]}>
             <div>
               <p data-testid="movie-overview"> {movDetail.overview}</p>
-              <button>Top rated movie #65</button>
+              <button className={styles["rated-button"]}>
+                Top rated movie #65
+              </button>
+              <select>
+                <option>Awards 9 nominations</option>
+              </select>
             </div>
             <div className={styles["button-section"]}>
               <button>See showtimes</button>
